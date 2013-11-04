@@ -14,7 +14,6 @@ if [ $(whoami) != "root" ]; then
 fi
 
 name_of_site="$2.dev"
-
 apache2_site_conf="/etc/apache2/sites-available/$name_of_site"
 
 # Функция добавления
@@ -65,7 +64,6 @@ add_site() {
     	echo " > Сайт '$name_of_site' успешно добавлен"
     	exit 0
     fi
-
 }
 
 # Функция удаления
@@ -132,10 +130,3 @@ else
 	echo " > Используйте $0 add(добавление) rm(удаление) name_of_site"
 	exit 1
 fi
-
-
-# Функция просмотра списка виртуальных хостов
-
-# sudo chown -R $USER:$USER /var/www  <- простановка прав
-# Добавить ln в home для быстрого доступа как public_html
-#	
