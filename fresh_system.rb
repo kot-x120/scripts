@@ -35,7 +35,7 @@ puts " > Устанавливаем программы"
 puts "-------------------------------"
 system "sudo apt-get install sublime-text libreoffice speedcrunch shutter"
 system "sudo apt-get install audacious vlc browser-plugin-vlc darktable inkscape gpicview font-manager"
-system "sudo apt-get install chromium"
+system "sudo apt-get install chromium-browser"
 system "sudo apt-get install grub-customizer hddtemp conky lm-sensors "
 system "sudo apt-get install ruby racket rhino nodejs curl"
 
