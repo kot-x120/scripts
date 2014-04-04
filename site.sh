@@ -13,7 +13,7 @@ if [ $(whoami) != "root" ]; then
     exit 1
 fi
 
-name_of_site="$2.dev"
+name_of_site="$2"
 apache2_site_conf="/etc/apache2/sites-available/$name_of_site"
 
 # Функция добавления
